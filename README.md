@@ -49,7 +49,7 @@ git clone https://github.com/RuaJean/admin_panel.git
 cd admin_panel
 
 ```
-
+ 
 **2. Instalar Dependencias**
 
 Navega al directorio del proyecto y ejecuta el siguiente comando:
