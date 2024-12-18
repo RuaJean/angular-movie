@@ -1,0 +1,42 @@
+<div class="empleados-container">
+  <h1 class="empleados-title">Gestión de Empleados</h1>
+
+  <div class="empleados-header">
+    <button class="btn-primary" (click)="crearEmpleado()">+ Nuevo Empleado</button>
+    <button class="btn-secondary" (click)="irAEntidades()">Ir a Entidades</button>
+
+  </div>
+
+  <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+
+  <div class="table-container">
+    <table class="empleados-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Cargo</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let empleado of empleados">
+          <td>{{ empleado.id }}</td>
+          <td>{{ empleado.nombre }}</td>
+          <td>{{ empleado.cargo }}</td>
+          <td class="acciones">
+            <button class="btn-info" (click)="verDetalle(empleado.id)">
+              <i class="material-icons">visibility</i> Ver
+            </button>
+            <button class="btn-edit" (click)="editarEmpleado(empleado.id)">
+              <i class="material-icons">edit</i> Editar
+            </button>
+            <button class="btn-danger" (click)="eliminarEmpleado(empleado.id)">
+              <i class="material-icons">delete</i> Eliminar
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

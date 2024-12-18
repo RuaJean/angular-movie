@@ -1,0 +1,52 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { 
+    height: 100%;
+    background-color: #F0F4FF; }
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background-color: #F0F4FF;
+ }
+
+/* Cambia el color de fondo y el color del texto del encabezado */
+table#example thead {
+    background-color: #343a40;
+    color: white;
+}
+
+/* Estiliza las filas del cuerpo de la tabla */
+table#example tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Color de fondo alterno para las filas pares */
+}
+
+table#example tbody tr:hover {
+    background-color: #ddd; /* Color al pasar el mouse por una fila */
+}
+
+/* Estilo de las celdas de la tabla */
+table#example td, table#example th {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #dee2e6;
+}
+
+/* Estilo personalizado para los botones en la columna de acciones */
+table#example td .btn {
+    margin-right: 5px; /* Espaciado entre botones */
+}
+
+table#example td .btn-primary {
+    background-color: #007bff; /* Color azul para el botón de editar */
+    border-color: #007bff;
+}
+
+table#example td .btn-danger {
+    background-color: #dc3545; /* Color rojo para el botón de eliminar */
+    border-color: #dc3545;
+}
+
+table#example td .btn i {
+    color: white; /* Color del icono dentro del botón */
+}
+

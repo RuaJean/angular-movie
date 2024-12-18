@@ -1,0 +1,17 @@
+<div class="detalle-container">
+    <div class="detalle-card">
+      <h2>Detalle de la Entidad</h2>
+  
+      <div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+  
+      <div *ngIf="entidad" class="detalle-info">
+        <p><strong>ID:</strong> {{ entidad.id }}</p>
+        <p><strong>Nombre:</strong> {{ entidad.nombre }}</p>
+        <p><strong>Descripción:</strong> {{ entidad.descripcion }}</p>
+        <p><strong>Fecha de Creación:</strong> {{ entidad.fechaCreacion }}</p>
+      </div>
+  
+      <button class="btn-back" (click)="regresar()">Regresar</button>
+    </div>
+  </div>
+  

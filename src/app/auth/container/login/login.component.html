@@ -1,0 +1,20 @@
+<div class="login-container">
+    <h2>Iniciar Sesión</h2>
+    <form (submit)="onLogin()">
+      <div>
+        <label>Usuario:</label>
+        <input [(ngModel)]="nombreUsuario" name="nombreUsuario" required />
+      </div>
+      <div>
+        <label>Contraseña:</label>
+        <input type="password" [(ngModel)]="passwordHash" name="passwordHash" required />
+      </div>
+      <div>
+        <button type="submit">Login</button>
+      </div>
+      <div *ngIf="errorMessage" class="error-message">
+        {{ errorMessage }}
+      </div>
+    </form>
+  </div>
+  
