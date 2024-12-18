@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class EntidadService {
-  private apiUrl = 'https://localhost:7032/api/Entidades';
+  private apiUrl = 'https://pruebatecnica-backend.azurewebsites.net/api/Entidades';
 
   constructor(private http: HttpClient) {}
 

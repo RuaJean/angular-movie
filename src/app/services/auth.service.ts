@@ -7,7 +7,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class AuthService {
-  private apiUrl = 'https://localhost:7032/api/Auth'; // URL base de tu backend
+  private apiUrl = 'https://pruebatecnica-backend.azurewebsites.net/api/Auth'; // URL base de tu backend
   private loggedIn = new BehaviorSubject<boolean>(this.hasToken());
 
   constructor(private http: HttpClient, private router: Router) {}

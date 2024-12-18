@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class EmpleadoService {
-  private apiUrl = 'https://localhost:7032/api/Empleados';
+  private apiUrl = 'https://pruebatecnica-backend.azurewebsites.net/api/Empleados';
 
   constructor(private http: HttpClient) {}
 

@@ -45,8 +45,8 @@ Antes de comenzar, asegúrate de tener instalado lo siguiente:
 ### **1. Clonar el Repositorio**
 
 ```bash
-git clone https://github.com/RuaJean/admin_panel.git
-cd admin_panel
+git clone https://github.com/RuaJean/angular_movie.git
+cd angular_movie
 
 ```
  
@@ -64,7 +64,7 @@ npm install
 El proyecto está configurado para conectarse a una API backend. Verifica que el backend esté corriendo en el endpoint:
 
 ```arduino
-https://localhost:7032
+https://pruebatecnica-backend.azurewebsites.net
 
 ```
 
